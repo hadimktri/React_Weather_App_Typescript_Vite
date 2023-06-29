@@ -1,0 +1,30 @@
+:root {
+  --COLOR-GRAY: #333333;
+  --COLOR-GRAY-DARK: #222222;
+  --COLOR-GRAY-LIGHT: #cccccc;
+  --COLOR-Main: #ffffff;
+  --COLOR-DONE: #ee6c4d;
+  font-family: Helvetica;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--COLOR-GRAY-DARK);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+.weather-clock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--COLOR-MAIN);
+  /* margin-bottom: 20px; */
+}
