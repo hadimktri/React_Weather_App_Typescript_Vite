@@ -38,6 +38,7 @@
     width: auto;
     letter-spacing: -5px;
     margin: 10px 0;
+    letter-spacing: 2px;
 }
 
 .details {
@@ -113,8 +114,11 @@
 }
 
 .dailyDetailGrid {
+    font-weight: 400;
+    background-color: #dfe1fd;
     flex: 1 1;
-    padding: 5px 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .dailyDetailGridItem {

@@ -1,10 +1,13 @@
 import style from "./style.module.css";
 
 const Weather = ({ weather }: any) => {
+  console.log(weather);
   return (
     <div className={style.weather}>
       <div className={style.top}>
-        <p className={style.temperature}>{Math.round(weather.data.main.temp)}°C</p>
+        <p className={style.temperature}>
+          {Math.round(weather.data.main.temp)}°C
+        </p>
         <img
           src={`../src/assets/icons/${weather.data.weather[0].icon}.png`}
           alt=""
@@ -21,12 +24,14 @@ const Weather = ({ weather }: any) => {
           <div className={style.parameterRow}>
             <span className={style.parameterLabel}>feels like: </span>
             <span className={style.parameterValue}>
-              {Math.round(weather.data.main.feelsLike)}°C
+              {Math.round(weather.data.main.feels_like)}°C
             </span>
           </div>
           <div className={style.parameterRow}>
             <span className={style.parameterLabel}>wind: </span>
-            <span className={style.parameterValue}>{weather.data.wind.speed}</span>
+            <span className={style.parameterValue}>
+              {weather.data.wind.speed}
+            </span>
           </div>
           <div className={style.parameterRow}>
             <span className={style.parameterLabel}>humidity: </span>
